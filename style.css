@@ -1,0 +1,42 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+  }
+  .navbar-brand img {
+    height: 40px;
+  }
+  .category-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  .product-card img {
+    height: 150px;
+    object-fit: contain;
+  }
+  .hero-section {
+    background-color: #e6f7f2;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .hero-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .info-box {
+    background-color: #d0f0e9;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+  }
+  .trending-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .badge-new {
+    background-color: red;
+    color: white;
+    font-size: 0.7rem;
+  }
