@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.cart-container {
+  flex: 1;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.cart-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  gap: 1rem;
+}
+
+.cart-item:hover {
+  transform: scale(1.01);
+  background-color: #f0f8f8;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  transition: transform 0.3s ease;
+}
+
+.cart-item img:hover {
+  transform: scale(1.05);
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.item-price {
+  font-size: 1rem;
+  color: #555;
+  margin: 6px 0;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quantity-controls button:hover {
+  background-color: #0056b3;
+}
+
+.quantity-display {
+  padding: 0 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.remove-btn {
+  background-color: transparent;
+  color: #dc3545;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-left: auto;
+}
+
+.remove-btn:hover {
+  color: #a71d2a;
+}
+
+.cart-summary h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-details {
+    margin-top: 1rem;
+  }
+
+  .remove-btn {
+    margin-top: 1rem;
+  }
+}
+
+/* Cart count badge */
+#cart-count {
+  font-size: 0.75rem;
+  padding: 0.35em 0.6em;
+  border-radius: 999px;
+  vertical-align: top;
+  line-height: 1;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
